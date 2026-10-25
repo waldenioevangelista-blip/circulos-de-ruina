@@ -1,0 +1,1 @@
+{"visual_px_por_u":32,"tabuleiro":{"largura":7,"altura":7,"raio_hex_u":3.0},"encontro":{"distancia_u":1.3},"arena":{"raio_base_u":12.0,"raio_por_unidade_extra_u":1.5,"raio_maximo_u":20.0,"raio_captura_u":2.25,"tempo_limite_s":60},"combate":{"empurrao_maximo_u":2.2,"atordoamento_maximo_s":0.75}}
