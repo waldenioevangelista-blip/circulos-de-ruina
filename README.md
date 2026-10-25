@@ -1,12 +1,17 @@
-# Círculos de Ruína
+# Círculos de Ruína — Protótipo 0.1
 
-Jogo tático dark fantasy que alterna entre um tabuleiro estratégico hexagonal por turnos e arenas dinâmicas quando unidades inimigas se encontram.
+Protótipo HTML5 de estratégia em tabuleiro hexagonal com transição para arena de combate.
 
-## Estado
-Conceito e vertical slice documentados.
+## Como jogar
+1. Abra `index.html` no navegador.
+2. Clique numa unidade da equipe ativa.
+3. Clique em hexágono adjacente vazio para mover e trocar o turno.
+4. Clique no inimigo adjacente para abrir a arena.
+5. Na arena, use WASD ou setas para mover e Espaço para atacar.
 
-## Documentos
-- [GDD](docs/GDD.md)
-- [Escalas e unidades iniciais](data/units_initial.json)
+## Onde editar
+- `data/config.json`: arena, hexágonos e limites.
+- `data/units.json`: vida, dano, velocidade, raios e cores.
+- `data/terrains.json`: terrenos e cicatrizes.
 
-Toda medida de gameplay usa U (unidade de mundo), nunca pixels. Referência visual inicial: 1 U = 32 px.
+Os dados também estão espelhados em `game.js`, para o jogo abrir diretamente sem servidor local.
