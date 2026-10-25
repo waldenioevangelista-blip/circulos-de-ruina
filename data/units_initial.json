@@ -1,0 +1,28 @@
+{
+  "world_unit": {
+    "visual_px_per_u": 32,
+    "hex_radius_u": 3.0,
+    "default_unit_radius_u": 0.65,
+    "encounter_distance_u": 1.3
+  },
+  "arena": {
+    "base_radius_u": 12.0,
+    "radius_per_extra_unit_u": 1.5,
+    "max_radius_u": 20.0,
+    "capture_radius_u": 2.25,
+    "formula": "clamp(12 + (total_units - 2) * 1.5, 12, 20)"
+  },
+  "combat_limits": {
+    "max_knockback_u": 2.2,
+    "max_stun_s": 0.75,
+    "short_cooldown_s": 9.0,
+    "medium_cooldown_s": 13.0,
+    "long_cooldown_s": 18.0
+  },
+  "units": [
+    {"id":"sentinela_de_sal","role":"tank","health":240,"damage":20,"speed_u_s":3.44,"physical_radius_u":0.82,"attack_range_u":1.55},
+    {"id":"corvo_de_vela","role":"scout","health":140,"damage":24,"speed_u_s":4.76,"physical_radius_u":0.42,"attack_range_u":3.3},
+    {"id":"viuva_de_bronze","role":"duelist","health":180,"damage":32,"speed_u_s":4.32,"physical_radius_u":0.58,"attack_range_u":1.9},
+    {"id":"cao_de_cinzas","role":"aggressor","health":160,"damage":36,"speed_u_s":4.54,"physical_radius_u":0.6,"attack_range_u":1.55}
+  ]
+}
