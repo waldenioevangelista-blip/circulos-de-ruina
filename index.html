@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Círculos de Ruína</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="jogo">
+    <header>
+      <div><h1>Círculos de Ruína</h1><p id="subtitulo">Tabuleiro estratégico</p></div>
+      <button id="reiniciar">Reiniciar partida</button>
+    </header>
+    <section class="hud" aria-live="polite">
+      <div><span>Fase</span><strong id="fase">Tabuleiro</strong></div>
+      <div><span>Turno</span><strong id="turno">Casa do Luto</strong></div>
+      <div><span>Selecionado</span><strong id="selecionado">Nenhum</strong></div>
+      <div><span>Status</span><strong id="status">Clique numa unidade vermelha.</strong></div>
+    </section>
+    <canvas id="canvas" width="1000" height="700" aria-label="Protótipo jogável de Círculos de Ruína"></canvas>
+    <section class="ajuda" id="ajuda"><b>Tabuleiro:</b> clique numa unidade da equipe ativa e depois num hexágono vizinho. Clique no inimigo para abrir a arena.<br><b>Arena:</b> mova com WASD ou setas e ataque com Espaço. O defensor usa IA simples.</section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
